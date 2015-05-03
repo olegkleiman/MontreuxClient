@@ -24,20 +24,20 @@ public class MainActivity extends BasicActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		
-		if( DEVELOPER_MODE ) {
-			StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder()
-				.detectDiskReads()
-				.detectDiskWrites()
-				.detectNetwork()
-				.penaltyLog()
-				.build());
-		
-			StrictMode.setVmPolicy(new StrictMode.VmPolicy.Builder()
-				.detectLeakedSqlLiteObjects()
-				.detectLeakedClosableObjects()
-				.penaltyLog()
-				.build());
-		}
+//		if( DEVELOPER_MODE ) {
+//			StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder()
+//				.detectDiskReads()
+//				.detectDiskWrites()
+//				.detectNetwork()
+//				.penaltyLog()
+//				.build());
+//
+//			StrictMode.setVmPolicy(new StrictMode.VmPolicy.Builder()
+//				.detectLeakedSqlLiteObjects()
+//				.detectLeakedClosableObjects()
+//				.penaltyLog()
+//				.build());
+//		}
 		
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
@@ -95,10 +95,15 @@ public class MainActivity extends BasicActivity {
                         startActivity(intent);
                         break;
 
-                    case 9: // AllJoyn
+                    case 9: // Wi-Fi P2P
                         intent = new Intent(MainActivity.this, AllJoynActivity.class);
                         startActivity(intent);
                         break;
+
+					case 10: // Wi-Fi
+						intent = new Intent(MainActivity.this, WiFiActivity.class);
+						startActivity(intent);
+						break;
             	}
     
             }

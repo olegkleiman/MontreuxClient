@@ -66,11 +66,12 @@ public class ImageAdapter extends BaseAdapter {
             R.drawable.circle_purple,
             R.drawable.circle_purple900,
             R.drawable.circle_yellow1,
-            R.drawable.circle_firebrick1
+            R.drawable.circle_firebrick1,
+            R.drawable.circle_gray
     };
     
     // and their captions
     private String[] mTitles = { "Reports", "Pictures", "Videos", "NFC",
                                 "Write NFC", "BLE", "OpenCV", "FastCV",
-                                "Prefs", "AllJoyn"};
+                                "Prefs", "Wi-Fi Direct", "Wi-Fi"};
 }

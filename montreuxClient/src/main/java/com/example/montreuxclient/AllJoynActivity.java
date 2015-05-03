@@ -616,14 +616,17 @@ public class AllJoynActivity extends Activity
             // 2- busy
 
             switch ( reason ){
-                case 0:
+                case WifiP2pManager.ERROR:
                     return "Internal Error";
 
-                case 1:
+                case WifiP2pManager.P2P_UNSUPPORTED:
                     return "P2P unsupported";
 
-                case 2:
+                case WifiP2pManager.BUSY:
                     return "Busy";
+
+                case WifiP2pManager.NO_SERVICE_REQUESTS:
+                    return "No service request";
 
                 default:
                     return "Unknown";

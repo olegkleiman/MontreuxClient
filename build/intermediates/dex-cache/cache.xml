@@ -2,11 +2,25 @@
 <items version="2" >
 
     <item
-        jar="C:\Dev\Android\Montreux\Client\montreuxClient\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
+        jar="C:\Users\Oleg\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.2.2\1f96456ca233dec780aa224bff076d8e8bca3908\gson-2.2.2.jar"
         jumboMode="false"
-        revision="21.1.2"
-        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
-        <dex dex="C:\Dev\Android\Montreux\Client\montreuxClient\build\intermediates\pre-dexed\debug\classes-030cb722662058d08640163a605aa6733e566a2a.jar" />
+        revision="22.0.1"
+        sha1="1f96456ca233dec780aa224bff076d8e8bca3908">
+        <dex dex="C:\Dev\Android\Montreux\Client\montreuxClient\build\intermediates\pre-dexed\debug\gson-2.2.2-36ee12b7f91d429368b909f4c543533921917940.jar" />
+    </item>
+    <item
+        jar="C:\Dev\Android\Montreux\Client\montreuxClient\libs\alljoyn_about.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="186457bdbeccb86fccf70b0593f967c4c2ecfc36">
+        <dex dex="C:\Dev\Android\Montreux\Client\montreuxClient\build\intermediates\pre-dexed\debug\alljoyn_about-d38511e156b1cee4932f4bf7c0d7075c50cebe0e.jar" />
+    </item>
+    <item
+        jar="C:\Dev\Android\Montreux\Client\montreuxClient\libs\mobileservices-1.1.5.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="12188408c45b88124cb38dd2bedc9b314b5f554b">
+        <dex dex="C:\Dev\Android\Montreux\Client\montreuxClient\build\intermediates\pre-dexed\debug\mobileservices-1.1.5-1baf4aa067875d13f90b23d8600e3e04ef582531.jar" />
     </item>
     <item
         jar="C:\Users\Oleg\.gradle\caches\modules-2\files-2.1\com.google.guava\guava\18.0\cce0823396aa693798f8882e64213b1772032b09\guava-18.0.jar"
@@ -16,11 +30,39 @@
         <dex dex="C:\Dev\Android\Montreux\Client\montreuxClient\build\intermediates\pre-dexed\debug\guava-18.0-e42300d1a3e3d4b5a1e6431f9a873f65bf9645b4.jar" />
     </item>
     <item
+        jar="C:\Dev\Android\Montreux\Client\montreuxClient\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
+        <dex dex="C:\Dev\Android\Montreux\Client\montreuxClient\build\intermediates\pre-dexed\debug\classes-77524d4dd77dd8e847baca3ecd05ba941222a4a1.jar" />
+    </item>
+    <item
+        jar="C:\Dev\Android\Montreux\Client\montreuxClient\build\intermediates\exploded-aar\Client\microsoftazurestorage\unspecified\libs\jackson-core-2.1.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6575afa4a9b3dc94dec2fa6082847e6987de651c">
+        <dex dex="C:\Dev\Android\Montreux\Client\montreuxClient\build\intermediates\pre-dexed\debug\jackson-core-2.1.0-c9e7f788deccecbca839efbbc43b3fda1df4abdc.jar" />
+    </item>
+    <item
+        jar="C:\Dev\Android\Montreux\Client\montreuxClient\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\libs\internal_impl-22.1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
+        <dex dex="C:\Dev\Android\Montreux\Client\montreuxClient\build\intermediates\pre-dexed\debug\internal_impl-22.1.1-e219a69297b7f25ab32480a7c95cd3c719e25eb7.jar" />
+    </item>
+    <item
         jar="C:\Dev\Android\Montreux\Client\montreuxClient\libs\microsoft-windowsazure-api-0.1.2.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="162df5f55a66a623a85f739f8d2bb366af89f01b">
         <dex dex="C:\Dev\Android\Montreux\Client\montreuxClient\build\intermediates\pre-dexed\debug\microsoft-windowsazure-api-0.1.2-596b8cdd5d2b6b4b4b72f87478655970bb1a119e.jar" />
+    </item>
+    <item
+        jar="C:\Dev\Android\Montreux\Client\montreuxClient\libs\alljoyn.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="b9b0cb031a60acd52eb503276f3a23a8d7f8ce44">
+        <dex dex="C:\Dev\Android\Montreux\Client\montreuxClient\build\intermediates\pre-dexed\debug\alljoyn-5131a1063524d5efe45e8e2f63a243d0b6a4de78.jar" />
     </item>
     <item
         jar="C:\Dev\Android\Montreux\Client\montreuxClient\build\intermediates\exploded-aar\Client\microsoftazurestorage\unspecified\classes.jar"
@@ -30,13 +72,6 @@
         <dex dex="C:\Dev\Android\Montreux\Client\montreuxClient\build\intermediates\pre-dexed\debug\classes-e2532e4667c244182f54c6b4a191f9b58ab2a8c0.jar" />
     </item>
     <item
-        jar="C:\Dev\Android\Montreux\Client\montreuxClient\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
-        <dex dex="C:\Dev\Android\Montreux\Client\montreuxClient\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-7c4702ddc538e50fe71165644963f37ec4909aa9.jar" />
-    </item>
-    <item
         jar="C:\Users\Oleg\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.2.2\1f96456ca233dec780aa224bff076d8e8bca3908\gson-2.2.2.jar"
         jumboMode="false"
         revision="21.1.2"
@@ -44,11 +79,25 @@
         <dex dex="C:\Dev\Android\Montreux\Client\montreuxClient\build\intermediates\pre-dexed\debug\gson-2.2.2-36ee12b7f91d429368b909f4c543533921917940.jar" />
     </item>
     <item
+        jar="C:\Users\Oleg\.gradle\caches\modules-2\files-2.1\com.google.guava\guava\18.0\cce0823396aa693798f8882e64213b1772032b09\guava-18.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="cce0823396aa693798f8882e64213b1772032b09">
+        <dex dex="C:\Dev\Android\Montreux\Client\montreuxClient\build\intermediates\pre-dexed\debug\guava-18.0-e42300d1a3e3d4b5a1e6431f9a873f65bf9645b4.jar" />
+    </item>
+    <item
         jar="C:\Dev\Android\Montreux\Client\montreuxClient\libs\alljoyn_about.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="186457bdbeccb86fccf70b0593f967c4c2ecfc36">
         <dex dex="C:\Dev\Android\Montreux\Client\montreuxClient\build\intermediates\pre-dexed\debug\alljoyn_about-d38511e156b1cee4932f4bf7c0d7075c50cebe0e.jar" />
+    </item>
+    <item
+        jar="C:\Dev\Android\Montreux\Client\montreuxClient\libs\microsoft-windowsazure-api-0.1.2.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="162df5f55a66a623a85f739f8d2bb366af89f01b">
+        <dex dex="C:\Dev\Android\Montreux\Client\montreuxClient\build\intermediates\pre-dexed\debug\microsoft-windowsazure-api-0.1.2-596b8cdd5d2b6b4b4b72f87478655970bb1a119e.jar" />
     </item>
     <item
         jar="C:\Dev\Android\Montreux\Client\montreuxClient\build\intermediates\exploded-aar\Client\microsoftazurestorage\unspecified\libs\jackson-core-2.1.0.jar"
@@ -72,11 +121,18 @@
         <dex dex="C:\Dev\Android\Montreux\Client\montreuxClient\build\intermediates\pre-dexed\debug\mobileservices-1.1.5-1baf4aa067875d13f90b23d8600e3e04ef582531.jar" />
     </item>
     <item
-        jar="C:\Users\Oleg\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jar="C:\Users\Oleg\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.1.1\support-annotations-22.1.1.jar"
         jumboMode="false"
-        revision="21.1.2"
-        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
-        <dex dex="C:\Dev\Android\Montreux\Client\montreuxClient\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-7cc47c38fa2701773c471c75c3a04a9c10b6e26a.jar" />
+        revision="22.0.1"
+        sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
+        <dex dex="C:\Dev\Android\Montreux\Client\montreuxClient\build\intermediates\pre-dexed\debug\support-annotations-22.1.1-fc06824466a2c28ee407a9f8aec3acf43265a5c1.jar" />
+    </item>
+    <item
+        jar="C:\Dev\Android\Montreux\Client\montreuxClient\build\intermediates\exploded-aar\Client\microsoftazurestorage\unspecified\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="741518ae01baa75b1037edd8870b8ce31e14850f">
+        <dex dex="C:\Dev\Android\Montreux\Client\montreuxClient\build\intermediates\pre-dexed\debug\classes-e2532e4667c244182f54c6b4a191f9b58ab2a8c0.jar" />
     </item>
 
 </items>

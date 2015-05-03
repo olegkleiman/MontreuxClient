@@ -45,43 +45,47 @@ public final class R {
         public static final int circle_black=0x7f020001;
         public static final int circle_blue2=0x7f020002;
         public static final int circle_firebrick1=0x7f020003;
-        public static final int circle_pink=0x7f020004;
-        public static final int circle_purple=0x7f020005;
-        public static final int circle_purple900=0x7f020006;
-        public static final int circle_yellow1=0x7f020007;
-        public static final int ic_launcher=0x7f020008;
-        public static final int round_button=0x7f020009;
-        public static final int start_stop_button=0x7f02000a;
-        public static final int tap_to_send=0x7f02000b;
-        public static final int tlv_logo=0x7f02000c;
+        public static final int circle_gray=0x7f020004;
+        public static final int circle_pink=0x7f020005;
+        public static final int circle_purple=0x7f020006;
+        public static final int circle_purple900=0x7f020007;
+        public static final int circle_yellow1=0x7f020008;
+        public static final int ic_launcher=0x7f020009;
+        public static final int round_button=0x7f02000a;
+        public static final int start_stop_button=0x7f02000b;
+        public static final int tap_to_send=0x7f02000c;
+        public static final int tlv_logo=0x7f02000d;
     }
     public static final class id {
-        public static final int action_settings=0x7f0b0024;
+        public static final int action_settings=0x7f0b0027;
         public static final int boothSpiner=0x7f0b000d;
         public static final int btnClientConfirm=0x7f0b0004;
+        public static final int btnConnectAP=0x7f0b001d;
         public static final int btnDriver=0x7f0b0002;
         public static final int btnPassenger=0x7f0b0003;
+        public static final int btnSetAP=0x7f0b001c;
         public static final int btnSettings=0x7f0b0017;
         public static final int btnSettingsUpdate=0x7f0b000e;
         public static final int btnTakePicture=0x7f0b0016;
-        public static final int button1=0x7f0b001e;
+        public static final int button1=0x7f0b0021;
         public static final int cbUpnp=0x7f0b0001;
         public static final int container_root=0x7f0b0006;
-        public static final int device_details=0x7f0b0020;
-        public static final int device_name=0x7f0b001f;
-        public static final int device_status=0x7f0b0022;
-        public static final int device_type=0x7f0b0021;
+        public static final int device_details=0x7f0b0023;
+        public static final int device_name=0x7f0b0022;
+        public static final int device_status=0x7f0b0025;
+        public static final int device_type=0x7f0b0024;
         public static final int gridview=0x7f0b000f;
         public static final int imageView1=0x7f0b0010;
         public static final int linearLayout1=0x7f0b0018;
         public static final int list=0x7f0b0015;
         public static final int listStatuses=0x7f0b0005;
-        public static final int listViewPeers=0x7f0b001c;
+        public static final int listViewPeers=0x7f0b001f;
+        public static final int networksListView=0x7f0b001e;
         public static final int nfcContent=0x7f0b0014;
         public static final int nfcdesc=0x7f0b0012;
         public static final int note=0x7f0b001a;
         public static final int startStopSwitch=0x7f0b000a;
-        public static final int text=0x7f0b0023;
+        public static final int text=0x7f0b0026;
         public static final int text1=0x7f0b0007;
         public static final int text2=0x7f0b0008;
         public static final int text3=0x7f0b0009;
@@ -89,7 +93,7 @@ public final class R {
         public static final int title=0x7f0b0013;
         public static final int txtAuthor=0x7f0b0011;
         public static final int txtBoostID=0x7f0b000c;
-        public static final int txtChatLine=0x7f0b001d;
+        public static final int txtChatLine=0x7f0b0020;
         public static final int txtMe=0x7f0b0000;
         public static final int webView1=0x7f0b001b;
         public static final int write_tag=0x7f0b0019;
@@ -106,14 +110,15 @@ public final class R {
         public static final int activity_pic=0x7f030008;
         public static final int activity_report=0x7f030009;
         public static final int activity_video=0x7f03000a;
-        public static final int device_details=0x7f03000b;
-        public static final int fragment_item=0x7f030012;
-        public static final int fragment_item_grid=0x7f03000c;
-        public static final int fragment_peers_list=0x7f03000d;
-        public static final int fragment_wi_fi_chat=0x7f03000e;
-        public static final int row_devices=0x7f03000f;
-        public static final int tag_divider=0x7f030010;
-        public static final int tag_text=0x7f030011;
+        public static final int activity_wi_fi=0x7f03000b;
+        public static final int device_details=0x7f03000c;
+        public static final int fragment_item=0x7f030013;
+        public static final int fragment_item_grid=0x7f03000d;
+        public static final int fragment_peers_list=0x7f03000e;
+        public static final int fragment_wi_fi_chat=0x7f03000f;
+        public static final int row_devices=0x7f030010;
+        public static final int tag_divider=0x7f030011;
+        public static final int tag_text=0x7f030012;
     }
     public static final class menu {
         public static final int basic=0x7f0a0000;
@@ -123,11 +128,12 @@ public final class R {
         public static final int menu_all_joyn=0x7f0a0004;
         public static final int menu_corner=0x7f0a0005;
         public static final int menu_prefs=0x7f0a0006;
-        public static final int nfc=0x7f0a0007;
-        public static final int nfcwrite=0x7f0a0008;
-        public static final int pic=0x7f0a0009;
-        public static final int report=0x7f0a000a;
-        public static final int video=0x7f0a000b;
+        public static final int menu_wi_fi=0x7f0a0007;
+        public static final int nfc=0x7f0a0008;
+        public static final int nfcwrite=0x7f0a0009;
+        public static final int pic=0x7f0a000a;
+        public static final int report=0x7f0a000b;
+        public static final int video=0x7f0a000c;
     }
     public static final class string {
         public static final int action_settings=0x7f080000;
@@ -156,7 +162,8 @@ public final class R {
         public static final int title_activity_prefs=0x7f080017;
         public static final int title_activity_report=0x7f080018;
         public static final int title_activity_video=0x7f080019;
-        public static final int write_to_tag=0x7f08001a;
+        public static final int title_activity_wi_fi=0x7f08001a;
+        public static final int write_to_tag=0x7f08001b;
     }
     public static final class style {
         /** 

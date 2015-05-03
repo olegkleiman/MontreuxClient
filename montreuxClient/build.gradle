@@ -3,14 +3,14 @@ import org.apache.tools.ant.taskdefs.condition.Os
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 21
-    buildToolsVersion "21.1.2"
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
 
     defaultConfig {
         //versionCode getVersionCodeFromManifest()
         applicationId "com.example.montreuxclient"
         minSdkVersion 16
-        targetSdkVersion 19
+        targetSdkVersion 22
 
         ndk {
             moduleName "libfastcvUtils"
@@ -38,7 +38,7 @@ android {
 
 dependencies {
     compile project(':microsoftazurestorage')
-    compile 'com.android.support:support-v4:21.0.3'
+    compile 'com.android.support:support-v4:22.1.1'
     compile 'com.google.code.gson:gson:2.2.2'
     compile 'com.google.guava:guava:18.0'
     compile files('libs/microsoft-windowsazure-api-0.1.2.jar')
