@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="Dialog Based Preferences">
+
+        <EditTextPreference android:title="Your Name"
+            android:key="username"
+            android:summary="Please provide your username">
+
+        </EditTextPreference>
+
+        <Preference
+            android:key="pref_share"
+            android:summary="Share the app with your friends"
+            android:title="Share it" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Launch">
+        <!-- This PreferenceScreen tag sends the user to a new fragment of
+             preferences.  If running in a large screen, they can be embedded
+             inside of the overall preferences UI. -->
+        <PreferenceScreen
+            android:fragment="com.example.montreuxclient.PrefsActivity$Prefs1FragmentInner"
+            android:title="title_fragment_preference"
+            android:summary="summary_fragment_preference">
+            <!-- Arbitrary key/value pairs can be included for fragment arguments -->
+            <extra android:name="someKey" android:value="somePrefValue" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Montreux Client</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_report">ReportActivity</string>
+    <string name="title_activity_pic">PicActivity</string>
+    <string name="title_activity_video">VideoActivity</string>
+    <string name="title_activity_basic">BasicActivity</string>
+    <string name="title_activity_nfc">iTLV 2014</string>
+    <string name="nfc_description">Bring the device close to the NFC Tag \nor to another device.</string>
+    <string name="nfc_last_message">Last read message</string>
+    <string name="title_activity_itlvsettings">ITLVSettings</string>
+    <string name="titleBoostID">Boost ID</string>
+    <string name="defaultBoostID">1</string>
+    <string name="title_activity_nfcwrite">NFCWriteActivity</string>
+    <string name="default_note_text">okey.azurewebsites.net</string>
+    <string name="write_to_tag">Write to Tag</string>
+    <string name="title_activity_ble">BLEActivity</string>
+ 	<string name="ble_not_supported">BLE is not supported on this device</string>
+    <string name="title_activity_corner">CornerActivity</string>
+
+    <string name="label_text">Type here: </string>
+    <string name="textview01_text">TextView01</string>
+    <string name="startpreview_text">Start</string>
+    <string name="stoppreview_text">Stop</string>
+    <string name="title_activity_prefs">PrefsActivity</string>
+    <string name="title_activity_all_joyn">AllJoynActivity</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="booths">
+        <item>דיגיתל</item>
+        <item>אינטרנט אלחוטי</item>
+        <item>מצלמות</item>
+        <item>קיר כחם</item>
+        <item>דיוור אלקטרוני</item>
+        <item>מערכת באר</item>
+        <item>ניטור תהליכים</item>
+        <item>רישום</item>
+        <item>מרכז סלולר</item>
+        <item>מובייל</item>
+    </string-array>
+</resources>

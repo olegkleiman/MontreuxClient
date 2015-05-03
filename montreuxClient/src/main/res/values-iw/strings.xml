@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Montreux Client</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_report">ReportActivity</string>
+    <string name="title_activity_pic">PicActivity</string>
+    <string name="title_activity_video">VideoActivity</string>
+    <string name="title_activity_basic">BasicActivity</string>
+    <string name="title_activity_nfc">iTLV 2014</string>
+	<string name="nfc_description">Bring the device close to the NFC Tag \nor to another device.\nIf this device is Android-powered, the Android Beam should be used on those device to push NDEF message here.</string>
+	<string name="nfc_last_message">נתונים מהתג:</string>
+	<string name="titleBoostID">מספר דוכן</string>
+</resources>

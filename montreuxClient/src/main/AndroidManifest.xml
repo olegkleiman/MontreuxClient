@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.montreuxclient"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission
+        android:required="true"
+        android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission
+        android:required="true"
+        android:name="android.permission.CHANGE_WIFI_STATE"/>
+
+    <!-- Google Play filtering -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.wifi.direct"
+        android:required="true"/>
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ReportActivity"
+            android:label="@string/title_activity_report" >
+        </activity>
+        <activity
+            android:name=".PicActivity"
+            android:label="@string/title_activity_pic" >
+        </activity>
+        <activity
+            android:name=".VideoActivity"
+            android:label="@string/title_activity_video" >
+        </activity>
+        <activity
+            android:name=".BasicActivity"
+            android:label="@string/title_activity_basic" >
+        </activity>
+        <activity
+            android:name=".NFCActivity"
+            android:label="@string/title_activity_nfc"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+
+            <!--
+			<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+
+            <intent-filter>
+                <action android:name="android.nfc.action.TECH_DISCOVERED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.nfc.action.TECH_DISCOVERED"
+                android:resource="@xml/nfc_tech_filter" />
+
+            <intent-filter>
+                <action android:name="android.nfc.action.TAG_DISCOVERED" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ITLVSettingsActivity"
+            android:label="@string/title_activity_itlvsettings" >
+        </activity>
+        <activity
+            android:name=".NFCWriteActivity"
+            android:label="@string/title_activity_nfcwrite"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".BLEActivity"
+            android:label="@string/title_activity_ble" >
+        </activity>
+        <activity
+            android:name=".fastcv.CornerActivity"
+            android:label="@string/title_activity_corner"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".PrefsActivity"
+            android:label="@string/title_activity_prefs" >
+        </activity>
+        <activity
+            android:name=".AllJoynActivity"
+            android:label="@string/title_activity_all_joyn"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Holo">
+        </activity>
+
+        <!--<receiver-->
+            <!--android:name=".WiFiDirectBroadcastReceiver"-->
+            <!--android:enabled="true"-->
+            <!--android:exported="true" >-->
+        <!--</receiver>-->
+
+    </application>
+
+</manifest>
