@@ -11,6 +11,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ListView;
 
+import com.example.montreuxclient.wifi.ClientScanResult;
+import com.example.montreuxclient.wifi.FinishScanListener;
 import com.example.montreuxclient.wifi.TraceAdapter;
 import com.example.montreuxclient.wifi.WIFI_AP_STATE;
 import com.example.montreuxclient.wifi.WifiApManager;
@@ -43,32 +45,6 @@ public class WiFiActivity extends Activity {
                 new ArrayList<String>());
 
         listView.setAdapter(mTraceAdapter);
-
-//        mWiFiManager.startScan();
-//        mScans = mWiFiManager.getScanResults();
-//        if( mScans != null
-//                && !mScans.equals(Collections.EMPTY_LIST) ) {
-//            for (ScanResult scan : mScans) {
-//                Log.d(LOG_TAG, scan.SSID + " " + scan.BSSID
-//                        + " Level:" + mWiFiManager.calculateSignalLevel(scan.level, 100)
-//                        + " " + scan.capabilities);
-//
-//                if( configs != null
-//                        && !configs.equals(Collections.EMPTY_LIST)) {
-//
-//                    for (WifiConfiguration config : configs) {
-//                        String plainConfigSSID = config.SSID.replaceAll("^\"+|\"+$", "");
-//                        if (scan.SSID.equals(plainConfigSSID)) {
-//                            Log.i(LOG_TAG, "Match! " + config.SSID + " " + scan.BSSID);
-//
-//                            mNetworksAdapter.add(config);
-//                        }
-//                    }
-//                }
-//            }
-//        }
-//        mNetworksAdapter.notifyDataSetChanged();
-
     }
 
     private WifiConfiguration getFastRideConfig() {
@@ -89,7 +65,11 @@ public class WiFiActivity extends Activity {
         int frNetworkID = -1;
         String traceMessage;
 
-        WifiConfiguration frConfiguratrion = getFastRideConfig();
+        if( !mWiFiManager.isWifiEnabled() )
+            mWiFiManager.setWifiEnabled(true);
+
+        WifiConfiguration frConfiguration = getFastRideConfig();
+
 
         List<WifiConfiguration> configs = mWiFiManager.getConfiguredNetworks();
         boolean bFRFound = false;
@@ -98,7 +78,7 @@ public class WiFiActivity extends Activity {
 
             for(WifiConfiguration config : configs) {
                 String trimmedConfigSSID = config.SSID.replaceAll("^\"+|\"+$", "");
-                if( trimmedConfigSSID.equals(frConfiguratrion.SSID) ) {
+                if( trimmedConfigSSID.equals(frConfiguration.SSID) ) {
                     frNetworkID = config.networkId;
                     bFRFound = true;
                     break;
@@ -109,8 +89,14 @@ public class WiFiActivity extends Activity {
 
                 // Add "Fast Ride" network to the set of configured networks.
                 // The newly added network will be marked DISABLED by default.
-                frNetworkID = mWiFiManager.addNetwork(frConfiguratrion);
+                frNetworkID = mWiFiManager.addNetwork(frConfiguration);
             }
+        } else {
+            traceMessage = "Configured network list is empty";
+
+            mTraceAdapter.add(traceMessage);
+            mTraceAdapter.notifyDataSetChanged();
+            Log.d(LOG_TAG, "Network enabling failed");
         }
 
         if( frNetworkID != -1 ) {
@@ -149,6 +135,26 @@ public class WiFiActivity extends Activity {
         mTraceAdapter.notifyDataSetChanged();
         Log.e("CLIENT", traceMessage);
 
+    }
+
+    public void onBtnClient(View view) {
+        WifiApManager wifiApManager = new WifiApManager(this);
+        wifiApManager.getClientList(false, new FinishScanListener(){
+
+            @Override
+            public void onFinishScan(ArrayList<ClientScanResult> clients) {
+                for(ClientScanResult scan : clients) {
+
+                    String traceMessage =  scan.getDevice() + " "
+                                            + scan.getIpAddr()
+                                            + "\n" + scan.getHWAddr()
+                                            + " Is reachable: " + scan.isReachable();
+                    Log.e("CLIENT", traceMessage);
+                    mTraceAdapter.add(traceMessage);
+                    mTraceAdapter.notifyDataSetChanged();
+                }
+            }
+        });
     }
 
     @Override

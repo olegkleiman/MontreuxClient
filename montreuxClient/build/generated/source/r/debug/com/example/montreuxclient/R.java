@@ -57,9 +57,10 @@ public final class R {
         public static final int tlv_logo=0x7f02000d;
     }
     public static final class id {
-        public static final int action_settings=0x7f0b0027;
+        public static final int action_settings=0x7f0b0028;
         public static final int boothSpiner=0x7f0b000d;
         public static final int btnClientConfirm=0x7f0b0004;
+        public static final int btnClients=0x7f0b001e;
         public static final int btnConnectAP=0x7f0b001d;
         public static final int btnDriver=0x7f0b0002;
         public static final int btnPassenger=0x7f0b0003;
@@ -67,25 +68,25 @@ public final class R {
         public static final int btnSettings=0x7f0b0017;
         public static final int btnSettingsUpdate=0x7f0b000e;
         public static final int btnTakePicture=0x7f0b0016;
-        public static final int button1=0x7f0b0021;
+        public static final int button1=0x7f0b0022;
         public static final int cbUpnp=0x7f0b0001;
         public static final int container_root=0x7f0b0006;
-        public static final int device_details=0x7f0b0023;
-        public static final int device_name=0x7f0b0022;
-        public static final int device_status=0x7f0b0025;
-        public static final int device_type=0x7f0b0024;
+        public static final int device_details=0x7f0b0024;
+        public static final int device_name=0x7f0b0023;
+        public static final int device_status=0x7f0b0026;
+        public static final int device_type=0x7f0b0025;
         public static final int gridview=0x7f0b000f;
         public static final int imageView1=0x7f0b0010;
         public static final int linearLayout1=0x7f0b0018;
         public static final int list=0x7f0b0015;
         public static final int listStatuses=0x7f0b0005;
-        public static final int listViewPeers=0x7f0b001f;
-        public static final int networksListView=0x7f0b001e;
+        public static final int listViewPeers=0x7f0b0020;
+        public static final int networksListView=0x7f0b001f;
         public static final int nfcContent=0x7f0b0014;
         public static final int nfcdesc=0x7f0b0012;
         public static final int note=0x7f0b001a;
         public static final int startStopSwitch=0x7f0b000a;
-        public static final int text=0x7f0b0026;
+        public static final int text=0x7f0b0027;
         public static final int text1=0x7f0b0007;
         public static final int text2=0x7f0b0008;
         public static final int text3=0x7f0b0009;
@@ -93,7 +94,7 @@ public final class R {
         public static final int title=0x7f0b0013;
         public static final int txtAuthor=0x7f0b0011;
         public static final int txtBoostID=0x7f0b000c;
-        public static final int txtChatLine=0x7f0b0020;
+        public static final int txtChatLine=0x7f0b0021;
         public static final int txtMe=0x7f0b0000;
         public static final int webView1=0x7f0b001b;
         public static final int write_tag=0x7f0b0019;
